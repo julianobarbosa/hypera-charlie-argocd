@@ -3,9 +3,19 @@ kind: Kustomization
 
 namePrefix: dev-
 
+commonLabels:
+  app: charlie-server-dev
+
+namespace: charlie
+
 resources:
   - ./deployment.yaml
   - ./ingress.yaml
   - ./ingress-ssl.yaml
   - ./redirect-to-https.yaml
   - ./service.yaml
+
+images:
+- name: charlie-server
+  newName: acrcharliehypera.azurecr.io/charlie-server
+  newTag: IMAGE_TAG
