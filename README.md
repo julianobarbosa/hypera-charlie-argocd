@@ -1,2 +1,3 @@
-# hypera-charlie-argocd
-hypera-charlie-argocd
+# charlie-server
+
+### Installation:

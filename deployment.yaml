@@ -1,0 +1,40 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: charlie-server-deploy
+  namespace: charlie
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: charlie-server
+  template:
+    metadata:
+      name: charlie-server
+      labels:
+        app: charlie-server
+    spec:
+      containers:
+        - name: charlie-server
+          image: acrcharliehypera.azurecr.io/charlie-server:latest
+          imagePullPolicy: Always
+          resources:
+            requests:
+              cpu: 64m
+              memory: 96M
+            limits:
+              cpu: 100m
+              memory: 128M
+          env:
+          - name: ASPNETCORE_ENVIRONMENT
+            value: "Development"
+          ports:
+            # The Traefik container is listening on ports > 1024 so the container
+            # can be run as a non-root user and they can bind to these ports.
+            - name: web
+              containerPort: 80
+            - name: websecure
+              containerPort: 443
+      imagePullSecrets:
+        - name: acr-azure-auth

@@ -1,0 +1,18 @@
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: charlie-server-service
+  namespace: charlie
+spec:
+  selector:
+    app: charlie-server
+  ports:
+    - name: web
+      port: 80
+      targetPort: web
+    - name: websecure
+      port: 443
+      targetPort: websecure
+  sessionAffinity: ClientIP
+

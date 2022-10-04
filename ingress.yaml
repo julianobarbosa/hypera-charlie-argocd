@@ -1,0 +1,18 @@
+---
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: charlie-server
+  namespace: charlie
+spec:
+  entryPoints:
+    - web
+  routes:
+    - match: Host(`automacaoqas.hypera.com.br`)
+      kind: Rule
+      middlewares:
+        - name: redirect-to-https
+          namespace: charlie
+      services:
+        - name: charlie-server-service
+          port: 80
