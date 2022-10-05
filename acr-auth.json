@@ -1,0 +1,22 @@
+{
+  "kind": "SealedSecret",
+  "apiVersion": "bitnami.com/v1alpha1",
+  "metadata": {
+    "name": "acr-azure-auth",
+    "namespace": "charlie",
+    "creationTimestamp": null
+  },
+  "spec": {
+    "template": {
+      "metadata": {
+        "name": "acr-azure-auth",
+        "namespace": "charlie",
+        "creationTimestamp": null
+      },
+      "type": "kubernetes.io/dockerconfigjson"
+    },
+    "encryptedData": {
+      ".dockerconfigjson": "AgCydENxMmV6lDjKSEk1nF8Zzgm98zsb+u9clabMpi7wWN5dPfxGFgwn/A9rEEpRVqJdxHwyk/GtNbUSBexGiiH2nozcsJqQ2JgQtPTaVxz3ddR3YO5xiZISUIGfpySSFBR75NSqQsY+4xhFNt2QPH0MT72fL1/Si+OnMe5gsD168rMhiZHBV+RA2y5T/16t0LNHA7zfqjSLfsvKR8JkUAnmV/c0ovCmPpt7pc77v7mXFAsrU8JQKUgie8obndVar5pYJXL3SIs78TkCAZmaNJyAXW/Q7GIK/0IZeBmKNLwXxb7WKbqgxyFjB+0uKCICasuq6MLEwT3EBnGaFUc4Yn126hVgcvE3zAG4iw1vaQCz1hgb7a8FIS/cJMnL9nadVHAM/GxhPKMzni9EcKk3kVuc5xPFDWNAGiynFiZd8ThyJlpODS1ueLE7GaIwJ/+2hcENidOl9vWzUCI8n+IgkdxTkWc0qLRDe2IPO7gDCx6y6u8zJM45tCG/D1Fxb9r9v+z4CZd1St9Y6b1mgsm/uI2EFNbW5Gj5qlJQ/ep2sY58G3MIllpaI5SJtXRLk2ktlKcJPqWaUVBgIFdPIR/ePM0FCpS7gOHnIDqFQeKnLNMDlVXttL2yF+VmGqWlHdB8/Tum4KXPTd4joEWZLhUtdLtc2tzu1zeT5yfVuytzkkCiSjzBBKNRw4gZ3tza6N3cDrr2ornJy/GmZ1+iJHxLMYAqYcc+akFOmqoeuEFqVC0UXMXMyLjZibLRFkCryA5H5HXmt8Nm9HrEzyxzHO4P3z4dl1dfOeW6MfecwNz1hQlK0WPVXpnbm/dkMRjiX0Ev5pghXv4JkimvXfaPuuEjBmQC3AKQZXTDFeZ7OnTC0GmguoUTyX3GpcET7X64"
+    }
+  }
+}
