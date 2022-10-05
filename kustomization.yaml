@@ -9,6 +9,8 @@ commonLabels:
 namespace: charlie
 
 resources:
+  - ./ns.yaml
+  - ./acr-auth.yaml
   - ./deployment.yaml
   - ./ingress.yaml
   - ./ingress-ssl.yaml
