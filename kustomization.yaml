@@ -9,15 +9,17 @@ commonLabels:
 namespace: charlie
 
 resources:
-  - ./ns.yaml
-  - ./acr-auth.json
-  - ./deployment.yaml
-  - ./ingress.yaml
-  - ./ingress-ssl.yaml
-  - ./redirect-to-https.yaml
-  - ./service.yaml
+- ./ns.yaml
+- ./acr-auth.json
+- ./deployment.yaml
+- ./ingress.yaml
+- ./ingress-ssl.yaml
+- ./redirect-to-https.yaml
+- ./service.yaml
 
 images:
+- name: acrcharliehypera.azurecr.io/charlie-server
+  newTag: "3.6"
 - name: charlie-server
   newName: acrcharliehypera.azurecr.io/charlie-server
   newTag: IMAGE_TAG
