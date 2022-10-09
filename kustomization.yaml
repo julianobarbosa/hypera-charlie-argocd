@@ -4,8 +4,6 @@ kind: Kustomization
 commonLabels:
   app: charlie-server
 
-namespace: charlie-prd
-
 resources:
 - ./acr-auth.json
 - ./deployment.yaml
