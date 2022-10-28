@@ -3,7 +3,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: charlie-server-deploy
-  namespace: charlie
 spec:
   replicas: 1
   selector:
