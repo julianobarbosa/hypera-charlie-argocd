@@ -6,6 +6,7 @@ commonLabels:
   app: charlie-server
 
 resources:
+  - ./hypera-ca-secret.yaml
   - ./acr-auth.yaml
   - ./deployment.yaml
   - ./ingress.yaml
