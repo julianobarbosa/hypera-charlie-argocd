@@ -2,7 +2,7 @@
   "kind": "SealedSecret",
   "apiVersion": "bitnami.com/v1alpha1",
   "metadata": {
-    "name": "acr-azure-auth-dev",
+    "name": "acr-azure-auth",
     "creationTimestamp": null,
     "annotations": {
       "sealedsecrets.bitnami.com/namespace-wide": "true"
@@ -11,7 +11,7 @@
   "spec": {
     "template": {
       "metadata": {
-        "name": "acr-azure-auth-dev",
+        "name": "acr-azure-auth",
         "creationTimestamp": null,
         "annotations": {
           "sealedsecrets.bitnami.com/namespace-wide": "true"
