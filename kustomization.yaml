@@ -9,8 +9,8 @@ resources:
   - ./hypera-ca-secret.yaml
   - ./acr-auth.yaml
   - ./deployment.yaml
-  - ./ingress.yaml
-  - ./ingress-ssl.yaml
+  - ./ingress-web.yaml
+  - ./ingress-websecure.yaml
   - ./redirect-to-https.yaml
   - ./service.yaml
 
