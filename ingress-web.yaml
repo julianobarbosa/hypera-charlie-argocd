@@ -2,12 +2,12 @@
 apiVersion: traefik.containo.us/v1alpha1
 kind: IngressRoute
 metadata:
-  name: charlie-server
+  name: charlie-server-web
 spec:
   entryPoints:
     - web
   routes:
-    - match: Host(`automacaoqas.hypera.com.br`)
+    - match: Host(`automacao.hypera.com.br`)
       kind: Rule
       middlewares:
         - name: redirect-to-https
